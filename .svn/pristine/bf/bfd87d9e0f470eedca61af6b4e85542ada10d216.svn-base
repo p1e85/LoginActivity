@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="start"
+	android:orientation="vertical">
+
+	<TextView
+	    android:id="@+id/tUsername"
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/username"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_marginBottom="20dp"
+		android:layout_marginLeft="20dp"
+		android:layout_marginTop="20dp"/>
+
+	<EditText
+	    android:id="@+id/etUsername"
+	    android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:inputType="textPersonName"
+		android:ems="10"
+		android:layout_toRightOf="@id/tUsername"
+		android:layout_marginRight="20dp"
+		android:layout_marginTop="20dp"
+		android:layout_marginBottom="20dp"/>
+
+	<TextView
+	    android:id="@+id/tPassword"
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/password"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_below="@id/tUsername"
+		android:layout_marginBottom="20dp"
+		android:layout_marginLeft="20dp"
+		android:layout_marginTop="15dp" />
+
+	<EditText
+	    android:id="@+id/etPassword"
+	    android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:inputType="textPassword"
+		android:ems="10"
+		android:layout_below="@id/etUsername"
+		android:layout_toRightOf="@id/tPassword"
+		android:layout_marginRight="20dp"
+		android:layout_marginBottom="20dp"
+		/>
+
+	<Button
+	    android:id="@+id/loginBtn"
+	    android:layout_width="180dp"
+		android:layout_height="wrap_content"
+		android:text="@string/login"
+		android:layout_below="@id/etPassword"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="20dp"
+		android:onClick="login" />
+
+	<Button
+	    android:id="@+id/forgotBtn"
+	    android:layout_width="180dp"
+		android:layout_height="wrap_content"
+		android:text="@string/forgot"
+		android:layout_below="@id/loginBtn"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="20dp"
+		android:onClick="forgot" />
+
+</RelativeLayout>
+
